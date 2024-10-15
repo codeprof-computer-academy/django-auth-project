@@ -1,0 +1,12 @@
+{% extends "authapp3/base.html" %}
+{% block title %}Signup here{% endblock title %}
+{% block content %}
+
+<form method="POST">
+     {% csrf_token %}
+     {{registerform.as_p}}
+     <input type="submit" value="register">
+
+</form>
+
+{% endblock content %}
